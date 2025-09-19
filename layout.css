@@ -1,0 +1,49 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (width>=1000px) {
+  .grid_1-1-1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+  .grid_1-1-1-1-1-1 img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .full_width_image {
+    display: grid;
+    width: 700px;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 2/3;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 2 / 2;
+  }
+
+  .low_wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 2 / 2;
+  }
+
+  .circular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 2 / 2;
+  }
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    aspect-ratio: 2 / 2;
+  }
+}
